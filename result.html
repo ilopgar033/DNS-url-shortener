@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado de Acortamiento</title>
+</head>
+<body>
+    <a href="{{ url_for('index') }}">Volver al formulario</a>
+    <h1>Resultado de la Operación</h1>
+
+    {% if success %}
+        <p style="color: green; font-weight: bold;">✅ ¡Registro TXT creado con éxito en IONOS!</p>
+        <p>Tu URL acortada es:</p>
+        <h2><a href="{{ shortened_url }}" target="_blank">{{ shortened_url }}</a></h2>
+        <p>Recuerda que debido al TTL (300 segundos), la URL podría tardar unos minutos en propagarse globalmente.</p>
+    {% else %}
+        <p style="color: red; font-weight: bold;">❌ Error al crear el enlace.</p>
+        <p>Detalles del error:</p>
+        <p>{{ message }}</p>
+    {% endif %}
+
+    <p><a href="{{ url_for('index') }}">Crear otro enlace</a></p>
+</body>
+</html>
