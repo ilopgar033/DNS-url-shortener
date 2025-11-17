@@ -15,7 +15,7 @@ app = Flask(__name__)
 BASE_DOMAIN = "ivalogar.es"
 ZONE_ID = "543ab8e2-b579-11f0-85e2-0a58644419f7"
 IONOS_API_KEY = "afefea2422aa4e25804088e6f8f1463d"
-IONOS_API_SECRET = "E3tWdOxQLNiiyTXVVXB9wZgTvBJTAJvjNV4ej9cJRcHFYGRfdwvyELS5tNUW5b9mpZDVJ6pvhvF0U1ImimziMA"
+IONOS_API_SECRET = "E3tWdOxQLNiiyTXVVXB9wZgTvBJTAJvj(secret)"
 IONOS_API_BASE = "https://api.hosting.ionos.com/dns/v1" 
 TTL_SECONDS = 300 
 # --- FIN DE TU CONFIGURACIÓN ---
